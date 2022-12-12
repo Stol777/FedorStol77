@@ -1,1 +1,1 @@
-print('lol')
+print('lol_1')
