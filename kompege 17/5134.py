@@ -11,4 +11,3 @@ with open('17_5134.txt') as f:
         if (seq[i] % 2023) * (seq[i + 1] % 2023) >= max_element:
             counter += 1
             lst.append(seq[i] + seq[i + 1])
-    print(counter, min(lst))
