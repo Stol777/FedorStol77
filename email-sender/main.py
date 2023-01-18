@@ -2,10 +2,6 @@ import smtplib
 from openpyxl import load_workbook
 
 
-# def xls_reading():
-#     wb = load_workbook('test.xlsx')
-
-
 server = 'smtp.mail.ru'
 user = 'ivanivanov777moscow@mail.ru'
 password = '3znjDsTaav1CggTX6yPR'
