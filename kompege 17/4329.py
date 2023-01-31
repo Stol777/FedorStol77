@@ -7,7 +7,6 @@ def list_of_divisors(integer):
 
 
 def condition(integer):
-    counter = 0
     lst = []
     for item in list_of_divisors(integer):
         if item in max_divisors_numbers_list:
