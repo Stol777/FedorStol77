@@ -14,7 +14,7 @@ def send_email(message):
         msg = MIMEText(message)
         msg["Subject"] = "Тема сообщения"
         server.sendmail(sender, sender, msg.as_string())
-
         return "Сообщение отправлено!"
+
     except Exception as _ex:
         return f"{_ex}\nПроверьте логин или пароль!"
