@@ -48,3 +48,8 @@ if __name__ == "__main__":
 # mail.login(user, password)
 # mail.sendmail(sender, recipients, msg)
 # mail.quit()
+
+
+# msg = '123'
+# msg = MIMEText(msg)
+# print(type(msg))

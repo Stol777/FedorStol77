@@ -25,10 +25,22 @@ def send_email(message, subject):
 
 
 def main():
-    message = input('Введите сообщение: ')
-    subject = input('Введите тему сообщения: ')
+    subject = 'Привет!'   # input('Введите тему сообщения: ')
+    message = 'Завтра в школе что-то важное'   # input('Введите сообщение: ')
     print(send_email(message, subject))
 
 
 if __name__ == '__main__':
     main()
+
+
+
+
+
+
+
+
+
+# msg = '123'
+# msg = MIMEText(msg)
+# print(type(msg.as_string()))
