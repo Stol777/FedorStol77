@@ -17,7 +17,7 @@ def send_email(message, subject):
         server.login(sender, password)
         msg = MIMEText(message)
         msg["Subject"] = subject
-        server.sendmail(sender, 'deutsch2288@yandex.ru', msg.as_string())
+        server.sendmail(sender, 'jiworil697@crtsec.com', msg.as_string())
         return "Сообщение отправлено!"
 
     except Exception as _ex:
@@ -26,14 +26,12 @@ def send_email(message, subject):
 
 def main():
     subject = 'Привет!'   # input('Введите тему сообщения: ')
-    message = 'Завтра в школе что-то важное'   # input('Введите сообщение: ')
+    message = 'Завтра в школе что-то очень важное!'   # input('Введите сообщение: ')
     print(send_email(message, subject))
 
 
 if __name__ == '__main__':
     main()
-
-
 
 
 
