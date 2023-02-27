@@ -17,6 +17,7 @@ def send_email(message, subject):
         server.login(sender, password)
         msg = MIMEText(message)
         msg["Subject"] = subject
+        msg["From"] = 'deutsch2288@yandex.ru'
         server.sendmail(sender, 'jiworil697@crtsec.com', msg.as_string())
         return "Сообщение отправлено!"
 
@@ -25,8 +26,8 @@ def send_email(message, subject):
 
 
 def main():
-    subject = 'Привет!'   # input('Введите тему сообщения: ')
-    message = 'Завтра в школе что-то очень важное!'   # input('Введите сообщение: ')
+    subject = input('Введите тему сообщения: ')
+    message = input('Введите сообщение: ')
     print(send_email(message, subject))
 
 
