@@ -1,8 +1,8 @@
 from itertools import permutations
-a = '.33'
-b = '3.232'
-v = '3.20'
-g = '23'
+a = input()
+b = input()
+v = input()
+g = input()
 counter = -1
 lst = [a, b, v, g]
 answer_lst = [*(permutations(['a', 'b', 'v', 'g'], 4))]
