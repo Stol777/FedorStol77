@@ -1,5 +1,5 @@
 from random import randint
-Hidden_number = 1000
+Hidden_number = randint(1, 100)
 counter = 0
 while True:
     try:
